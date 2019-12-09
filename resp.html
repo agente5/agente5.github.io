@@ -1,4 +1,3 @@
-<!DOCTYPE HTML>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -23,7 +22,7 @@ body{
 	padding: 30px;
 	background: #F8F8F8;
 	border-radius: 6px;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 }
 .form-style-10 h1{
 	background: #76BA27;
@@ -42,14 +41,14 @@ body{
 }
 .form-style-10 h1 > span{
 	display: block;
-	margin-top: 3px;
+	margin-top: 2px;
 	font: 13px Arial, Helvetica, sans-serif;
 }
 .form-style-10 label{
 	display: block;
 	font: 13px Arial, Helvetica, sans-serif;
 	color: #76BA27;
-	margin-bottom: 6px;
+	margin-bottom: 15px;
 }
 .form-style-10 input[type="text"],
 .form-style-10 input[type="date"],
@@ -76,11 +75,10 @@ body{
 	-moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
 	-webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
 }
-
 .form-style-10 .section{
 	font: normal 20px 'Bitter', serif;
 	color: #76BA27;
-	margin-bottom: 2px;
+	margin-bottom: 5px;
 }
 .form-style-10 .section span {
 	background: #76BA27;
@@ -126,76 +124,20 @@ body{
 	margin-top: 10px;
 	text-align: right;
 }
-
 </style>
 </head>
-	
 
-	
-	
-	
 <body>
-
+	
 <div class="form-style-10">
-	<h1>Carga tu crédito en línea<span>Carga el credito y paga en línea</span></h1>
+<h1>Carga tu crédito en línea<span>Carga el credito y paga en línea</span></h1>
 
-		<form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
-			<input type=hidden name="orgid" value="00Df4000002ayXs">
-			<input type=hidden name="retURL" value="https://agente5.github.io/resp.html">
-			<input type=hidden name="recordType" id="recordType" value="012f4000000SsIn">
-				<div class="section"><span>1</span>Opciones de pago</div>
-				
-				<div class="inner-wrap">
-					<label>Forma de Pago:
-						<select  id="00Nf400000UlIr4" name="00Nf400000UlIr4" title="Forma de Pago">
-							<option value="Pago con tarjeta de crédito">Pago con tarjeta de crédito</option>
-							<option value="Bancos habilitados o Puntos Externo">Bancos habilitados o Puntos Externo</option>
-							<option value="Pago directo en caja">Pago directo en caja</option>
-							<option value="Pago con Transferencia (ACH)">Pago con Transferencia (ACH)</option>	
-						</select><br>
-					</label>
-					<label>Abono a Cargar (en USD):
-						<input  id="00Nf400000UlIqz" name="00Nf400000UlIqz" value="" onchange="conv()"  onkeyup="conv()" size="20" type="number" /><br>
-					</label>
-					<input type=hidden id="TC" name="TC" value="6.96">
-					<label>Monto a Acreditar en Bolivianos:
-					</label>
-					<span id="bolis"></span>
-					<input type=hidden id="00Nf400000UlIr9" maxlength="10" name="00Nf400000UlIr9" size="20" type="text" /><br>
-				</div>
-
-				<div class="section"><span>2</span>Datos de solicitante</div>		
-					<div class="inner-wrap">
-						<label for="name">Nombre del contacto</label>
-						<input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
-						<label for="company">Empresa</label>
-						<input  id="company" maxlength="80" name="company" size="20" type="text" /><br>
-						<label for="email">Correo electrónico</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
-						<label for="phone">Teléfono</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
-						<label> Nombre / Razón Social:<input  id="00Nf400000UlIrE" maxlength="100" name="00Nf400000UlIrE" size="20" type="text" /><br></label>
-						<label> Numero de Nit:<input  id="00Nf400000UlIrJ" maxlength="50" name="00Nf400000UlIrJ" size="20" type="text" /><br></label>
-					</div>
-				<div class="section"><span>3</span>Referencias o indicaciones</div>
-						<div class="inner-wrap">
-						<label for="description">Comentarios</label><textarea name="description"></textarea><br>
-				</div>
-			<input type="submit" name="submit">
-
-		</form>
-</div>
-
-<script>
-function conv() {
- USD = document.getElementsByName("00Nf400000UlIqz");
- TC = document.getElementsByName("TC");
-
-document.getElementById("00Nf400000UlIr9").value = USD[0].value * TC[0].value;
-document.getElementById("bolis").innerHTML= USD[0].value * TC[0].value;
-
-
-}
-</script>
-
-
+<form action="https:// method="POST">
+<div class="form-style-10">
+<div class="section"><span> </span>Gracias</div>
+	
+<span>
+<p align="center">En unos instantes recibirá un correo electronico con el <B>código de solicitud de pago.</B> Conserve este código como referencia para realizar el pago, Utilizando el medio o canal de pago que ha seleccionado.</p>
+		 <p align="center">Consultas al correo: <a href="mailto:procesos@agente5.com">procesos@agente5.com</a> </p>
+	</span>
 </body>
-</html>
