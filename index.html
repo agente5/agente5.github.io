@@ -204,14 +204,13 @@ function conv() {
  V_TBOB = V_BOB + V_CARG; 
 
 
+document.getElementById("BOB").innerHTML= V_BOB.toFixed(2);
+document.getElementById("CARG").innerHTML= V_CARG.toFixed(2);
+document.getElementById("TBOB").innerHTML= V_TBOB.toFixed(2);
 
-document.getElementById("BOB").innerHTML= V_BOB;
-document.getElementById("CARG").innerHTML= V_CARG;
-document.getElementById("TBOB").innerHTML= V_TBOB;
 
-
-document.getElementById("00Nf400000UpTDD").innerHTML = V_TBOB;
-document.getElementById("TBOB").innerHTML=V_TBOB ;
+document.getElementById("00Nf400000UpTDD").innerHTML = V_TBOB.toFixed(2);
+document.getElementById("TBOB").innerHTML=V_TBOB.toFixed(2) ;
 
 
 }
