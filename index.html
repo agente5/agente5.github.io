@@ -164,8 +164,6 @@ body{
 					<span id="CARG"></span>
 					<label>Monto pagar en bolivianos:</label>
 					<span id="TBOB"></span>
-					<label>Tipo de pago</label>
-					<span id="TIPO"></span>
 					
 					<input type=hidden id="00Nf400000UpTDD" maxlength="10" name="00Nf400000UpTDD" size="20" type="text" /><br>
 										
@@ -195,26 +193,16 @@ body{
 function conv() {
  USD = document.getElementsByName("00Nf400000UlIqz");
  TC = document.getElementsByName("TC");
- v_tipo=document.getElementsByName("00Nf400000UlIr4");
+ v_tipo=document.getElementsByName('00Nf400000UlIr4')[0].selectedIndex;
  V_BOB =0;
  V_CARG =0;
  V_TBOB=0;
-document.getElementById("TIPO").innerHTML=v_tipo ;
-V_BOB= USD[0].value * TC[0].value;
+ 
+ V_BOB = USD[0].value * TC[0].value;
+ if( v_tipo>3){V_CARG=USD[0].value * TC[0].value*0.035;}
+ 
+ V_TBOB = V_BOB + V_CARG; 
 
-
-
-if (v_tipo="Pago con tarjeta de crédito"){
-
-V_CARG = USD[0].value * TC[0].value*0.035;
-V_TBOB= USD[0].value * TC[0].value*1.035;
-}
-else
-{
-V_CARG = USD[0].value * TC[0].value*0;
-V_TBOB= USD[0].value * TC[0].value;
-
-}
 
 
 document.getElementById("BOB").innerHTML= V_BOB;
@@ -224,7 +212,6 @@ document.getElementById("TBOB").innerHTML= V_TBOB;
 
 document.getElementById("00Nf400000UpTDD").innerHTML = V_TBOB;
 document.getElementById("TBOB").innerHTML=V_TBOB ;
-document.getElementById("TIPO").innerHTML=v_tipo ;
 
 
 }
