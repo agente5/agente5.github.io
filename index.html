@@ -133,7 +133,7 @@ body{
 	
 	
 <body>
-ver20191210 1844
+ver20191210 1848
 <div class="form-style-10">
 	<h1>Carga tu crédito en línea<span>Carga el credito y paga en línea</span></h1>
 
@@ -164,7 +164,7 @@ ver20191210 1844
 					<label>Monto pagar en BOB:
 					<span id="TBOB"></span></label>
 					
-					<input id="00Nf400000UpTDD" name="00Nf400000UpTDD">
+					<input type="hidden" id="00Nf400000UpTDD" name="00Nf400000UpTDD">
 										
 				</div>
 
@@ -209,7 +209,7 @@ document.getElementById("TBOB").innerHTML= V_TBOB.toFixed(2);
 
 
 document.getElementById("TBOB").innerHTML=V_TBOB.toFixed(2);
-document.getElementById("00Nf400000UpTDD").value=V_TBOB.toFixed(2);
+document.getElementById("00Nf400000UpTDD").value=V_TBOB;
 
 }
 </script>
