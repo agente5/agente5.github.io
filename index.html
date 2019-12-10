@@ -137,21 +137,20 @@ body{
 <div class="form-style-10">
 	<h1>Carga tu crédito en línea<span>Carga el credito y paga en línea</span></h1>
 
-		<form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
-			<input type=hidden name="orgid" value="00Df4000002ayXs">
+<form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+
+<input type=hidden name="orgid" value="00Df4000002ayXs">
 			<input type=hidden name="retURL" value="https://agente5.github.io/resp.html">
-			<input type=hidden name="recordType" id="recordType" value="012f4000000SsIn">
 				<div class="section"><span>1</span>Opciones de pago</div>
 				
 				<div class="inner-wrap">
-					<label>Forma de Pago:
-						<select  id="00Nf400000UlIr4" name="00Nf400000UlIr4" title="Forma de Pago" onchange="conv()">
-							<option value="Pago con Transferencia (ACH)">Pago con Transferencia (ACH)</option>
-							<option value="Depósitos en Cajas Bancos">Depósitos en Cajas Bancos</option>
-							<option value="Pago directo en caja">Pago directo en caja</option>
-							<option value="Bancos habilitados o Puntos Externo">Bancos habilitados o Puntos Externo</option>
-							<option value="Pago con tarjeta de crédito">Pago con tarjeta de crédito</option>
-						</select><br>
+					<label>Forma de Pago:<select  id="00Nf400000UlIr4" name="00Nf400000UlIr4" title="Forma de Pago">
+						<option value="Pago con Transferencia (ACH)">Pago con Transferencia (ACH)</option>
+						<option value="Depositos en Cajas Bancos">Depositos en Cajas Bancos</option>
+						<option value="Pago directo en caja">Pago directo en caja</option>
+						<option value="Bancos habilitados o Puntos Externo">Bancos habilitados o Puntos Externo</option>
+						<option value="Pago con tarjeta de crédito">Pago con tarjeta de crédito</option>
+					</select><br>
 					</label>
 					<label>Abono a Cargar (en USD):
 						<input  id="00Nf400000UlIqz" name="00Nf400000UlIqz" value="" onchange="conv()"  onkeyup="conv()" size="20" type="number" required /><br>
@@ -173,7 +172,7 @@ body{
 					<div class="inner-wrap">
 						<label for="name">Nombre del contacto</label>
 						<input  id="name" maxlength="80" name="name" size="20" type="text" required /><br>
-						<label for="company">Agencias</label>
+						<label for="company">Agencia</label>
 						<input  id="company" maxlength="80" name="company" size="20" type="text" required /><br>
 						<label for="email">Correo electrónico</label><input type="email" id="email" maxlength="80" name="email" size="20" type="text" required /><br>
 						<label for="phone">Teléfono</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" required /><br>
