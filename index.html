@@ -133,7 +133,7 @@ body{
 	
 	
 <body>
-ver20191212 916
+ver20191212 922
 <div class="form-style-10">
 	<h1>Carga tu crédito en línea<span>Carga el credito y paga en línea</span></h1>
 
@@ -144,7 +144,7 @@ ver20191212 916
 				<div class="section"><span>1</span>Opciones de pago</div>
 				
 				<div class="inner-wrap">
-					<label>Forma de Pago:<select  id="00Nf400000UlIr4" name="00Nf400000UlIr4" title="Forma de Pago" onchange="conv()"  onkeyup="conv()">
+					<label>Forma de Pago:<select  id="00Nf400000UlIr4" name="00Nf400000UlIr4" title="Forma de Pago" onchange="conv(event)"  onkeyup="conv(event)">
 						<option value="Pago con Transferencia (ACH)">Pago con Transferencia (ACH)</option>
 						<option value="Depositos en Cajas Bancos">Depositos en Cajas Bancos</option>
 						<option value="Pago directo en caja">Pago directo en caja</option>
@@ -153,7 +153,7 @@ ver20191212 916
 					</select><br>
 					</label>
 					<label>Abono a Cargar (en USD):
-						<input  id="00Nf400000UlIqz" name="00Nf400000UlIqz" value="" onchange="conv()"  onkeyup="conv()" size="20" type="number" required /><br>
+						<input  id="00Nf400000UlIqz" name="00Nf400000UlIqz" value="" onchange="conv(event)"  onkeyup="conv(event)" size="20" type="number" required /><br>
 					</label>
 					<input type=hidden id="TC" name="TC" value="6.97">
 					
@@ -192,7 +192,7 @@ ver20191212 916
 </div>
 
 <script>
-function conv() {
+function conv(event) {
  USD = document.getElementsByName("00Nf400000UlIqz");
  TC = document.getElementsByName("TC");
  v_tipo=document.getElementsByName('00Nf400000UlIr4')[0].selectedIndex;
@@ -213,7 +213,7 @@ var time = conv.timeStamp;
 
 document.getElementById("TBOB").innerHTML=V_TBOB.toFixed(2);
 document.getElementById("00Nf400000UpTDD").value=V_TBOB;
-var time = conv.timeStamp;
+var time = event.timeStamp;
 document.getElementById("00Nf400000UpUfN").value=time;
 }
 </script>
