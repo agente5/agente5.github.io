@@ -178,12 +178,14 @@ ver20191212 911
 						<label for="phone">Teléfono</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" required /><br>
 						<label> Nombre / Razón Social:<input  id="00Nf400000UlIrE" maxlength="100" name="00Nf400000UlIrE" size="20" type="text" required /><br></label>
 						<label> Numero de Nit:<input  id="00Nf400000UlIrJ" maxlength="50" name="00Nf400000UlIrJ" size="20" type="text" required /><br></label>
-						<label>CASE KEY:<input  type="hidden" id="00Nf400000UpUfN" maxlength="20" name="00Nf400000UpUfN" size="20" type="text" /><br>
-					</div>
+						
+											</div>
 				<div class="section"><span>3</span>Referencias o indicaciones</div>
 						<div class="inner-wrap">
 						<label for="description">Comentarios</label><textarea name="description"></textarea><br>
 				</div>
+			<label>CASE KEY:<input  type="hidden" id="00Nf400000UpUfN" maxlength="20" name="00Nf400000UpUfN" size="20" type="text" /><br>
+
 			<input type="submit" name="submit">
 
 		</form>
@@ -212,7 +214,7 @@ var time = conv.timeStamp;
 document.getElementById("TBOB").innerHTML=V_TBOB.toFixed(2);
 document.getElementById("00Nf400000UpTDD").value=V_TBOB;
 var time = conv.timeStamp;
-
+document.getElementById("00Nf400000UpUfN").value=time;
 }
 </script>
 	
