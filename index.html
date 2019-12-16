@@ -145,11 +145,11 @@ ver20191212 1044
 				
 				<div class="inner-wrap">
 					<label>Forma de Pago:<select  id="00Nf400000UlIr4" name="00Nf400000UlIr4" title="Forma de Pago" onchange="conv(event)"  onkeyup="conv(event)">
-						<option value="Pago con Transferencia (ACH)">Pago con Transferencia (ACH)</option>
-						<option value="Depositos en Cajas Bancos">Depositos en Cajas Bancos</option>
-						<option value="Pago directo en caja">Pago directo en caja</option>
-						<option value="Bancos habilitados o Puntos Externo">Bancos habilitados o Puntos Externo</option>
-						<option value="Pago con tarjeta de crédito">Pago con tarjeta de crédito</option>
+					<option value="Pago con Transferencia (ACH)">Pago con Transferencia (ACH)</option>
+					<option value="Depositos en Cajas Bancos">Depositos en Cajas Bancos</option>
+					<option value="Bancos habilitados o Puntos Externo">Bancos habilitados o Puntos Externo</option>
+					<option value="Pago con tarjeta de crédito">Pago con tarjeta de crédito</option>
+					<option value="Pago directo en caja">Pago directo en caja</option>
 					</select><br>
 					</label>
 					<label>Abono a Cargar (en USD):
@@ -201,7 +201,7 @@ function conv(event) {
  V_TBOB=0;
  
  V_BOB = USD[0].value * TC[0].value;
- if( v_tipo>3){V_CARG=USD[0].value * TC[0].value*0.035;}
+ if( v_tipo:=3){V_CARG=USD[0].value * TC[0].value*0.035;}
  
  V_TBOB = V_BOB + V_CARG; 
 
